@@ -50,5 +50,8 @@ function init() {
         graphing.graphFunctionofX(f);
         ctx.strokeStyle = 'rgb(50, 150, 255)';
         //graphing.graphAntiCurvature(curvature, 0, 0, -Math.PI/4, 100);
+
+        ctx.fillStyle = 'rgb(255, 130, 0)';
+        graphing.graphEquivalence((x,y)=>Math.pow(x*x+y*y, 2), (x,y)=>x*x-y*y);
     }
 }
